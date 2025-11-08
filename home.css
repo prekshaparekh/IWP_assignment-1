@@ -14,8 +14,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #25190e;
+    display: flex;
+    flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 .hero {
@@ -29,6 +34,7 @@ body {
     align-items: top;
     padding: 80px 80px;
     position: relative;
+    margin-top: 60px;
 }
 .hero-content {
     flex: 1;
@@ -62,6 +68,7 @@ body {
     gap: 15px;
     box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
     transition: all 0.3s ease;
+    
 }
 
 .menu-btn:hover {
