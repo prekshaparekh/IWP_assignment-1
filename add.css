@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body{
@@ -27,9 +27,10 @@ fieldset {
     box-shadow: 0 8px 20px rgba(40, 38, 36, 0.4);
 }
 legend{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    text-shadow: 0 8px 20px rgba(40, 38, 36, 0.4);
+    text-shadow: 3px 5px 5px rgba(14, 12, 10, 0.992);
+    
 }
 input{
     background:rgba(255, 255, 255, 0.5);

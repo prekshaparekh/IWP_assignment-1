@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="nav.css">
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlogo"><img src="images/logo.jpg"></div>
+         <div class="nav-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link ">Menu</a>
+            <a href="address.html" class="nav-link active">Address</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <div class="cart">
+                <i class="ri-shopping-bag-line"></i>
+             </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="page-header" >
+                    <h1 class="page-title" style="width: fit-content; padding: 6px; border: 2px white solid; border-radius: 20px;box-shadow: 0px 9px 11.2px 0px rgba(0, 0, 0, 0.27);">Pizza Menu</h1>
+                    <p class="page-subtitle" style="color: rgb(79, 58, 58); padding-left: 6px;font-family: Brush Script MT, Lucida Handwriting, Apple Chancery, cursive;font-size: 30px;">Pizza straight out of the oven!</p>
+                    <hr color="white">
+        </div>
+        
+        <div class="main-content">
+                
+
+                <!-- food grid -->
+                   
+                
+
+
+            
+                <div class="sidebar">
+                    <ul class="sidebar-menu">
+                    <li>
+                        <a href="burger.html">
+                            <i class="ri-cake-line"></i>
+                            Burgers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pizza.html" class="active">
+                            <i class="ri-pie-chart-line"></i>
+                            Pizza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="drinks.html">
+                            <i class="ri-cup-line"></i>
+                            Drinks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sides.html">
+                            <i class="ri-restaurant-line"></i>
+                            Sides
+                        </a>
+                    </li>
+                    
+                    </ul>
+                </div>
+
+                <div class="food-grid">
+                        <div class="food-item">
+                            <div class="aloopatty"><img src="images/aloopatty burger 1.png"></img> </div>
+                            <h3 class="food-name">Aloopatty Burger</h3>
+                            <p class="food-description">
+                                Crispy spiced potato patty with fresh veggies and creamy sauce in a soft bun.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹199</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 199)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-item">
+                            <div class="americanBBQ"><img src="images/americanBBQ burger 2.png"></img> </div>
+                            <h3 class="food-name">AmericanBBQ Burger</h3>
+                            <p class="food-description">
+                                Smoky BBQ sauce with a juicy patty, cheese, and grilled onions.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹285</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 285)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="bombay"><img src="images/bombaymasala burger1.png"></img> </div>
+                            <h3 class="food-name">Bombaymasala Burger</h3>
+                            <p class="food-description">
+                                Spicy Indian-style potato patty with tangy chutney and veggies.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹300</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 300)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="cheese"><img src="images/classic cheese burger 2.png"></img> </div>
+                            <h3 class="food-name">Classic Cheese-Burger</h3>
+                            <p class="food-description">
+                                Melted cheese over a tender patty with fresh lettuce and tomato.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹150</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 150)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="cheese"><img src="images/mexicanchilli burger 1.png"></img> </div>
+                            <h3 class="food-name">Mexicanchilli Burger</h3>
+                            <p class="food-description">
+                                Zesty patty with jalapeños, spicy sauce, and crunchy lettuce.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹290</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 290)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="cheese"><img src="images/paneertikka burger 1.png"></img> </div>
+                            <h3 class="food-name">Panner Tikka Burger</h3>
+                            <p class="food-description">
+                                Grilled paneer tikka with mint mayo and crisp veggies in a soft bun.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹300</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('aloopatty', 199)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
