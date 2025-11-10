@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="nav.css">
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlogo"><img src="images/logo.jpg"></div>
+         <div class="nav-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link ">Menu</a>
+            <a href="address.html" class="nav-link active">Address</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <div class="cart">
+                <i class="ri-shopping-bag-line"></i>
+             </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="page-header" >
+                    <h1 class="page-title" style="width: fit-content; padding: 6px; border: 2px white solid; border-radius: 20px;box-shadow: 0px 9px 11.2px 0px rgba(0, 0, 0, 0.27);">Drinks Menu</h1>
+                    <p class="page-subtitle" style="color: rgb(79, 58, 58); padding-left: 6px;font-family: Brush Script MT, Lucida Handwriting, Apple Chancery, cursive;font-size: 30px;">Pouring happiness, one glass at a time.</p>
+                    <hr color="white">
+        </div>
+        
+        <div class="main-content">
+                
+
+                <!-- food grid -->
+                   
+                
+
+
+            
+                <div class="sidebar">
+                    <ul class="sidebar-menu">
+                    <li>
+                        <a href="burger.html">
+                            <i class="ri-cake-line"></i>
+                            Burgers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pizza.html" >
+                            <i class="ri-pie-chart-line"></i>
+                            Pizza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="drinks.html" class="active">
+                            <i class="ri-cup-line"></i>
+                            Drinks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sides.html">
+                            <i class="ri-restaurant-line"></i>
+                            Sides
+                        </a>
+                    </li>
+                    
+                    </ul>
+                </div>
+
+                <div class="food-grid">
+                        <div class="food-item">
+                            <div class="coke"><img src="images/coke 1.png"></img> </div>
+                            <h3 class="food-name">Coke</h3>
+                            <p class="food-description">
+                                Classic fizz that never goes out of style.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹40</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('coke', 40)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="food-item">
+                            <div class="masalachai"><img src="images/masala chai 1.png"></img> </div>
+                            <h3 class="food-name">Masala chai</h3>
+                            <p class="food-description">
+                                Spiced, aromatic, and pure comfort in a cup.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹50</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('masalachai', 50)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="coldcoffe"><img src="images/cold coffee.png"></img> </div>
+                            <h3 class="food-name">Cold Coffee</h3>
+                            <p class="food-description">
+                                Smooth, chilled, and brewed to energize your day.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹200</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('coldcoffe', 200)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="kiwimilkshake"><img src="images/kiwi milkshake 1.png"></img> </div>
+                            <h3 class="food-name">Kiwi Milkshake</h3>
+                            <p class="food-description">
+                                Fresh, zesty, and a tropical green delight.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹349</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('kiwimilkshake', 349)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="mangomilkshake"><img src="images/mango milkshake 1.png"></img> </div>
+                            <h3 class="food-name">Mango Milkshake</h3>
+                            <p class="food-description">
+                                Thick, fruity, and packed with summer vibes.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹400</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('mangomilkshake', 400)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="strawberrymilkshake"><img src="images/strawberry milkshake .png"></img> </div>
+                            <h3 class="food-name">Strawberry Milkshake</h3>
+                            <p class="food-description">
+                                Sweet, pink, and perfectly creamy.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹299</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('images/strawberry milkshake .png', 299)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="sprite"><img src="images/spirite 1.png"></img> </div>
+                            <h3 class="food-name">Sprite</h3>
+                            <p class="food-description">
+                                Crisp, lemony fizz that refreshes instantly.
+                            </p>
+                            <div class="food-footer">
+                                <span class="food-price">₹299</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('images/strawberry milkshake .png', 299)">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
