@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+
+
+ <div class="navbar">
+        <div class="navlogo"><img src="images/logo.jpg"></div>
+         <div class="nav-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="address.html" class="nav-link ">Address</a>
+            <a href="cart.html" class="nav-link active">Cart</a>
+            <div class="cart">
+                <a href="cart.html" class="cart-icon">
+                    <i class="ri-shopping-bag-line"></i>
+                </a>
+             </div>
+        </div>
+    </div>
+    <div class="cart-page">
+        <div class="cart-header">
+            <h1>Your Shopping Cart</h1>
+        </div>
+
+        <!-- Empty cart message (hidden by default) -->
+        <div id="empty-cart-message">
+            <i class="ri-shopping-cart-line"></i>
+            <h2>Your cart is empty :(</h2>
+            <p>Add some delicious items to get started!</p>
+            <a href="burger.html" class="browse-menu-btn">Browse Menu</a>
+        </div>
+
+        <!-- Cart items container -->
+        <div id="cart-items">
+            <!-- Cart items will be added here by JavaScript -->
+          
+        </div>
+        
+        
+
+        <!-- Cart summary -->
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-total">₹0</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="cart-total-final">₹0</span>
+            </div>
+
+            <div class="cart-actions">
+                <button class="clear-cart-btn" onclick="clearcart()">
+                    <i class="ri-delete-bin-line"></i> Clear Cart
+                </button>
+                <button class="checkout-btn" onclick="checkout()">
+                    <i class="ri-check-line"></i> Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+<script src="cart.js"></script>
+</body>
+</html>

@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 10px;
 }
 .nav-link {
     color: #D3D3D3;

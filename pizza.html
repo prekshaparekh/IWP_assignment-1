@@ -7,6 +7,7 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="burger.css">
+    <link rel ="stylesheet" href ="cart.css">
 </head>
 <body>
     <div class="navbar">
@@ -17,8 +18,10 @@
             <a href="address.html" class="nav-link ">Address</a>
             <a href="cart.html" class="nav-link ">Cart</a>
             <div class="cart">
-                <i class="ri-shopping-bag-line"></i>
-             </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="ri-shopping-bag-line"></i>
+                </a>
+            </div>
         </div>
     </div>
     <div class="menu">
@@ -76,7 +79,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹275</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('7cheesepizza', 275)">
+                                <button class="add-to-cart-btn" onclick="addtocart('7cheesepizza', 275)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -91,7 +94,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹255</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('gardendelight', 255)">
+                                <button class="add-to-cart-btn" onclick="addtocart('gardendelight', 255)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -105,7 +108,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹300</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('hawaiian', 300)">
+                                <button class="add-to-cart-btn" onclick="addtocart('hawaiian', 300)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -119,7 +122,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹349</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('margerita', 349)">
+                                <button class="add-to-cart-btn" onclick="addtocart('margerita', 349)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -133,7 +136,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹290</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('tandoori', 290)">
+                                <button class="add-to-cart-btn" onclick="addtocart('tandoori', 290)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -147,7 +150,7 @@
                             </p>
                             <div class="food-footer">
                                 <span class="food-price">₹275</span>
-                                <button class="add-to-cart-btn" onclick="addToCart('periperi', 275)">
+                                <button class="add-to-cart-btn" onclick="addtocart('periperi', 275)">
                                     <i class="ri-shopping-cart-line"></i>
                                     Add to Cart
                                 </button>
@@ -157,6 +160,6 @@
         </div>
         
     </div>
-
+<script src="cart.js"></script>
 </body>
 </html>
